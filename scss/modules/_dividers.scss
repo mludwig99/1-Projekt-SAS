@@ -1,0 +1,31 @@
+/***/
+/*==========  5.2 - Dividers  ==========*/
+
+hr {
+    border-color: $color-border;
+    border-width: 1px;
+    max-width: 100%;
+    margin: $baseline auto;
+}
+
+hr.divider-light-dark {
+    max-width: $baseline * 6.3 - 1.2;
+    border-color: $color-primary;
+    border-width: 3px;
+}
+
+hr.divider-light {
+    border-color: $color-bg-main;
+    max-width: $baseline * 3.3;
+    border-width: 3px;
+}
+
+@media (min-width:1200px) {
+    hr.divider-light-dark {
+        border-color: #a5e200 !important;
+    }
+
+    hr.divider-light {
+        border-color: #f0f4dc !important;
+    }
+}
